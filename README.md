@@ -11,7 +11,7 @@
 `fraudR` is an R package for **forensic data analysis** designed to detect  
 **potential data fraud, human manipulation, or human error** in numeric datasets.
 
-The package applies multiple statistical forensic signals—including digit
+The package applies _multiple statistical forensic signals approcah_, including digit
 preference, entropy collapse, smoothness anomalies, and temporal pattern
 regularity—to generate an interpretable **fraud risk score** for each numeric
 variable in a dataset.
