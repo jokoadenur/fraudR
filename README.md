@@ -76,6 +76,36 @@ _What it detects?_ (1) Digit preference bias; (2) Entropy collapse in difference
 
 _And what it's Output?_ (1) A data frame containing:(a) fraud_score (0–1); (2) fraud_percent (0–100%); (3) risk_level (LOW / MEDIUM / HIGH)
 
+Example:
+```R
+fraud_score(hasil_cek_sampah)
+Variable 'Produksi1' shows a potential manipulation score of 19.3% - Risk level: LOW
+Variable 'Produksi2' shows a potential manipulation score of 19.3% - Risk level: LOW
+Variable 'Produksi3' shows a potential manipulation score of 19.1% - Risk level: LOW
+Variable 'Produksi4' shows a potential manipulation score of 19.4% - Risk level: LOW
+Variable 'Produksi5' shows a potential manipulation score of 18.6% - Risk level: LOW
+Variable 'Produksi6' shows a potential manipulation score of 19.3% - Risk level: LOW
+Variable 'Pendapatan1' shows a potential manipulation score of 25.5% - Risk level: LOW
+Variable 'Pendapatan2' shows a potential manipulation score of 25% - Risk level: LOW
+Variable 'Pendapatan3' shows a potential manipulation score of 25.5% - Risk level: LOW
+Variable 'Pendapatan4' shows a potential manipulation score of 25.5% - Risk level: LOW
+Variable 'Pendapatan5' shows a potential manipulation score of 25.1% - Risk level: LOW
+Variable 'Pendapatan6' shows a potential manipulation score of 23.9% - Risk level: LOW
+Variable 'Harga1' shows a potential manipulation score of 7.2% - Risk level: LOW
+Variable 'Harga2' shows a potential manipulation score of 10.3% - Risk level: LOW
+Variable 'Harga3' shows a potential manipulation score of 6% - Risk level: LOW
+Variable 'Harga4' shows a potential manipulation score of 7.7% - Risk level: LOW
+Variable 'Harga5' shows a potential manipulation score of 7.6% - Risk level: LOW
+Variable 'Harga6' shows a potential manipulation score of 8.1% - Risk level: LOW
+Variable 'harga_median' shows a potential manipulation score of 6.6% - Risk level: LOW
+Variable 'Harga_adj1' shows a potential manipulation score of 6.7% - Risk level: LOW
+Variable 'Harga_adj2' shows a potential manipulation score of 8.4% - Risk level: LOW
+Variable 'Harga_adj3' shows a potential manipulation score of 5.6% - Risk level: LOW
+Variable 'Harga_adj4' shows a potential manipulation score of 6.7% - Risk level: LOW
+Variable 'Harga_adj5' shows a potential manipulation score of 6.7% - Risk level: LOW
+Variable 'Harga_adj6' shows a potential manipulation score of 6.6% - Risk level: LOW
+```
+
 **Interpretation Guide**:
 
 <img width="988" height="242" alt="image" src="https://github.com/user-attachments/assets/f236a88a-eb21-45fb-b192-2a42e6fd02a0" />
