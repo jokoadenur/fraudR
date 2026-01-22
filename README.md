@@ -45,6 +45,7 @@ library(fraudR)
 ## Usage
 **Main Functions**
 1. fraud_score()
+
 Computes a fraud risk score for each numeric variable in a dataset using multiple forensic indicators.
 ```R
 fraud_score(dataset)
@@ -59,9 +60,25 @@ _And what it's Output?_ (1) A data frame containing:(a) fraud_score (0–1); (2)
 
 hint: `fraudR` provides statistical signals, not legal proof. Results should be interpreted alongside domain knowledge.
 
+2. plot_fraud_signature()
+
+Visualizes forensic signatures for a selected numeric variable.
+```R
+plot_fraud_signature(dataset, "variable")
+```
+_The plot includes_: (1) Time-series pattern with regression trend; (2) Last-digit distribution; (3) Distribution of first differences (Δ); and (4) Entropy collapse across data layers
+
+_Example_
+```R
+plot_fraud_signature(dataset, "Produksi1")
+```
+_The result_
+<img width="1070" height="766" alt="image" src="https://github.com/user-attachments/assets/b009bd4b-f804-4c90-9ab3-adfe4c0ebc88" />
+
 **Author**
 
 Joko Ade Nursiyono
+
 Data Analyst (East Java, BPS-Statistics Indonesia)
 
 **Citation**
