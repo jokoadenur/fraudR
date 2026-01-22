@@ -1,10 +1,10 @@
 Package: fraudR
-Title: What the Package Does (One Line, Title Case)
+Title: Detects potential data manipulation in numeric variables
 Version: 0.0.0.9000
 Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"),
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
+    person("Joko Ade", "Nursiyono", , "jokoadenursiyono@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0009-0008-1179-6776"))
+Description: Detects potential data manipulation in numeric variables using digit preference, entropy collapse, smoothness, and time-pattern analysis. The function automatically detects a time or index column if present.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
