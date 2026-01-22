@@ -13,7 +13,7 @@
 
 The package applies _multiple statistical forensic signals approcah_, including digit
 preference, entropy collapse, smoothness anomalies, and temporal pattern
-regularity—to generate an interpretable **fraud risk score** for each numeric
+regularity, to generate an interpretable **fraud risk score** for each numeric
 variable in a dataset.
 
 `fraudR` is suitable for:
