@@ -11,6 +11,28 @@
 `fraudR` is an R package for **forensic data analysis** designed to detect  
 **potential data fraud, human manipulation, or human error** in numeric datasets.
 
+# Dataset Requirements
+
+A numeric variable will be analyzed by `fraud_score()` only if all conditions below are met: (1) Data type: numeric; (2) Minimum observations: ≥ 10 non-missing values; (3) Minimum unique values: ≥ 5 distinct values; (4) Structure: ordered data (time column optional; row order used if absent). 
+
+# How to Check Your Data?
+
+```R
+x <- data$variable
+is.numeric(x) &&
+sum(!is.na(x)) >= 10 &&
+length(unique(x[!is.na(x)])) >= 5
+```
+# Recommended Structure
+```R
+data.frame(
+  time = 1:n,        # optional
+  var1 = numeric(n),
+  var2 = numeric(n)
+)
+```
+
+Variables not meeting these criteria are automatically skipped to avoid unreliable fraud detection.
 The package applies _multiple statistical forensic signals approcah_, including digit
 preference, entropy collapse, smoothness anomalies, and temporal pattern
 regularity, to generate an interpretable **fraud risk score** for each numeric
